@@ -26,9 +26,9 @@ export default React.createClass({
 	},
 
 	render() {
-    let {onTally, questions, onAlert, onHandleAlertDismiss, onResult} = this.props;
+    let {onTally, questions, onAlert, onHandleAlertDismiss, onResult, score} = this.props;
 		if(onResult){
-			return( <Result/>);
+			return( <Result score={score}/>);
 		}
     return (
       <div className="container">

@@ -59,9 +59,10 @@ exports['default'] = _react2['default'].createClass({
     var onAlert = _props.onAlert;
     var onHandleAlertDismiss = _props.onHandleAlertDismiss;
     var onResult = _props.onResult;
+    var score = _props.score;
 
     if (onResult) {
-      return _react2['default'].createElement(_ResultsJsx2['default'], null);
+      return _react2['default'].createElement(_ResultsJsx2['default'], { score: score });
     }
     return _react2['default'].createElement(
       'div',

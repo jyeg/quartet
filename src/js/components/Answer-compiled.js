@@ -41,7 +41,10 @@ exports['default'] = _react2['default'].createClass({
     //if (this.refs.checkbox.getChecked()) {
     //  ActionCreator.getQuestionsFromServer();
     //}
-    _actionsQuestionnaireActionCreators2['default'].answer(this.props.id, e.target.id);
+    e.preventDefault();
+    e.target.className += ' selected';
+    var splitId = e.target.id.split('.')[1];
+    _actionsQuestionnaireActionCreators2['default'].answer(this.props.id, splitId);
   },
 
   render: function render() {
@@ -52,22 +55,22 @@ exports['default'] = _react2['default'].createClass({
       null,
       _react2['default'].createElement(
         _reactBootstrapLibListGroupItemJs2['default'],
-        { id: '1', bsStyle: 'success', onClick: this.handleToggle },
+        { id: '{id}.0', bsStyle: 'success', onClick: this.handleToggle },
         'Not at all'
       ),
       _react2['default'].createElement(
         _reactBootstrapLibListGroupItemJs2['default'],
-        { id: '2', bsStyle: 'info', onClick: this.handleToggle },
+        { id: '{id}.1', bsStyle: 'info', onClick: this.handleToggle },
         'Several days'
       ),
       _react2['default'].createElement(
         _reactBootstrapLibListGroupItemJs2['default'],
-        { id: '3', bsStyle: 'warning', onClick: this.handleToggle },
+        { id: '{id}.2', bsStyle: 'warning', onClick: this.handleToggle },
         'More than half the days'
       ),
       _react2['default'].createElement(
         _reactBootstrapLibListGroupItemJs2['default'],
-        { id: '4', bsStyle: 'danger', onClick: this.handleToggle },
+        { id: '{id}.3', bsStyle: 'danger', onClick: this.handleToggle },
         'Nearly every day'
       )
     );

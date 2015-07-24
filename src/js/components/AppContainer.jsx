@@ -3,7 +3,6 @@ import QuestionStore from '../stores/QuestionStore';
 import AnswerStore from '../stores/AnswerStore.js';
 import ActionCreator from '../actions/QuestionnaireActionCreators';
 import App from './App.jsx';
-import Result from './Result';
 
 export default React.createClass({
 	//propTypes: {
@@ -27,7 +26,7 @@ export default React.createClass({
   getInitialState() {
     return {
 	    questions: ActionCreator.getQuestionsFromServer(),
-	    //score: 0,
+	    score: 0,
 	    scores: {},
 	    alertVisible: false,
 	    resultVisible:false
@@ -55,16 +54,16 @@ export default React.createClass({
 		//var scores = AnswerStore.getAll();
 		var keys = Object.keys(this.state.scores.scores);
 		var allScores = this.state.scores.scores;
-		console.log('keys',allScores);
 		if(keys.length === 9){
 			// calculates score.
 			var score = keys.reduce(function(sum, key){
-				sum += allScores[key];
+				sum += (+allScores[key]);
 				return sum;
 			},0);
-			if(score > 10){
+			//if(score > 10){
 				this.setState({resultVisible: true});
-			}
+				this.setState({score: score});
+			//}
 			//ActionCreator.tally(score);
 
 		}else{
@@ -73,7 +72,7 @@ export default React.createClass({
 	},
 
 	render() {
-    let {questions, alertVisible, resultVisible} = this.state;
+    let {questions, alertVisible, resultVisible, score} = this.state;
 			return (
 				<App
 					onTally={this.handleTally}
@@ -82,6 +81,7 @@ export default React.createClass({
 					onResult={resultVisible}
 					onHandleAlertDismiss={this.handleAlertDismiss}
 					onHandleAlertShow={this.handleAlertShow}
+				  score={score}
 					/>
 			);
   }

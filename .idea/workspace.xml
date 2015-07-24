@@ -2,38 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf75221-051a-46a4-b0d8-bda8cedb1349" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/Alert.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/js/components/Results.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/quartet_node_modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Answer-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/Answer-compiled.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Answer-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/Answer-compiled.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Answer.jsx" afterPath="$PROJECT_DIR$/src/js/components/Answer.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/AnswerStore-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/stores/AnswerStore-compiled.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/AnswerStore-compiled.js" afterPath="$PROJECT_DIR$/src/js/stores/AnswerStore-compiled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/AnswerStore.js" afterPath="$PROJECT_DIR$/src/js/stores/AnswerStore.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/App-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/App-compiled.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/App-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/App-compiled.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/App.jsx" afterPath="$PROJECT_DIR$/src/js/components/App.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/AppContainer-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/AppContainer-compiled.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/AppContainer-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/AppContainer-compiled.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/AppContainer.jsx" afterPath="$PROJECT_DIR$/src/js/components/AppContainer.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/Constants.js" afterPath="$PROJECT_DIR$/src/js/Constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Question-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/Question-compiled.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Question-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/Question-compiled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Question.jsx" afterPath="$PROJECT_DIR$/src/js/components/Question.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/QuestionStore-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/stores/QuestionStore-compiled.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/QuestionStore-compiled.js" afterPath="$PROJECT_DIR$/src/js/stores/QuestionStore-compiled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/stores/QuestionStore.js" afterPath="$PROJECT_DIR$/src/js/stores/QuestionStore.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Questionnaire-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/Questionnaire-compiled.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Questionnaire-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/Questionnaire-compiled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Questionnaire.jsx" afterPath="$PROJECT_DIR$/src/js/components/Questionnaire.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators-compiled.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators-compiled.js" afterPath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators-compiled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators.js" afterPath="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/quartet.iml" afterPath="$PROJECT_DIR$/.idea/quartet.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Results-compiled.js.map" afterPath="$PROJECT_DIR$/src/js/components/Results-compiled.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Results-compiled.js" afterPath="$PROJECT_DIR$/src/js/components/Results-compiled.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/Results.jsx" afterPath="$PROJECT_DIR$/src/js/components/Results.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="quartet.iws" />
@@ -59,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/src/js/components/App.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+              <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -70,26 +50,20 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1437705906000" expanded="true" signature="176:478" placeholder="{...}" />
+                <marker date="1437705906000" expanded="true" signature="298:476" placeholder="{...}" />
+                <marker date="1437705906000" expanded="true" signature="351:465" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TaskList.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/TaskList.jsx">
+      <file leaf-file-name="Answer.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/js/components/Answer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Task.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/components/Task.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="77" selection-start-line="25" selection-start-column="8" selection-end-line="26" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.3858521">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,18 +73,32 @@
         <entry file="file://$PROJECT_DIR$/src/js/components/Results.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
+              <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppContainer.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppContainer.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/components/AppContainer.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5839416">
-              <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+            <state vertical-scroll-proportion="-10.035714">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskList.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/components/TaskList.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+              <folding>
+                <marker date="1432910537000" expanded="true" signature="357:488" placeholder="&lt;xml/&gt;" />
+                <marker date="1432910537000" expanded="true" signature="524:660" placeholder="&lt;xml/&gt;" />
+                <marker date="1432910537000" expanded="true" signature="539:646" placeholder="&lt;xml/&gt;" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -130,14 +118,14 @@
         <option value="$PROJECT_DIR$/src/js/components/Task.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/Question.jsx" />
         <option value="$PROJECT_DIR$/src/js/stores/QuestionStore.js" />
-        <option value="$PROJECT_DIR$/src/js/components/Answer.jsx" />
         <option value="$PROJECT_DIR$/src/js/stores/AnswerStore.js" />
         <option value="$PROJECT_DIR$/src/js/components/Questionnaire.jsx" />
         <option value="$PROJECT_DIR$/src/js/actions/QuestionnaireActionCreators.js" />
         <option value="$PROJECT_DIR$/src/js/components/Alert.jsx" />
-        <option value="$PROJECT_DIR$/src/js/components/Results.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/App.jsx" />
         <option value="$PROJECT_DIR$/src/js/components/AppContainer.jsx" />
+        <option value="$PROJECT_DIR$/src/js/components/Results.jsx" />
+        <option value="$PROJECT_DIR$/src/js/components/Answer.jsx" />
       </list>
     </option>
   </component>
@@ -154,9 +142,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="805" />
+    <option name="x" value="-1920" />
+    <option name="y" value="-155" />
+    <option name="width" value="1225" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -441,7 +430,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
+    <frame x="-1920" y="-155" width="1225" height="1053" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -450,9 +439,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29401994" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3997195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959327" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -711,18 +700,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Answer.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
-          <folding>
-            <marker date="1437673104000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1437673104000" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1437673104000" expanded="true" signature="-1:-1" placeholder="&lt;xml/&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/stores/QuestionStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -771,42 +748,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/TaskList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="26" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/components/Results.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/Alert.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1437705906000" expanded="true" signature="176:478" placeholder="{...}" />
+            <marker date="1437705906000" expanded="true" signature="298:476" placeholder="{...}" />
+            <marker date="1437705906000" expanded="true" signature="351:465" placeholder="&lt;xml/&gt;" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/App.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/components/AppContainer.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5839416">
-          <caret line="75" column="18" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+        <state vertical-scroll-proportion="-10.035714">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/TaskList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <marker date="1432910537000" expanded="true" signature="357:488" placeholder="&lt;xml/&gt;" />
+            <marker date="1432910537000" expanded="true" signature="524:660" placeholder="&lt;xml/&gt;" />
+            <marker date="1432910537000" expanded="true" signature="539:646" placeholder="&lt;xml/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Results.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="40" selection-start-line="37" selection-start-column="40" selection-end-line="37" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/components/Answer.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3858521">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

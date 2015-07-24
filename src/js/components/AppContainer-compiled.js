@@ -26,10 +26,6 @@ var _AppJsx = require('./App.jsx');
 
 var _AppJsx2 = _interopRequireDefault(_AppJsx);
 
-var _Result = require('./Result');
-
-var _Result2 = _interopRequireDefault(_Result);
-
 exports['default'] = _react2['default'].createClass({
 	displayName: 'AppContainer',
 
@@ -54,7 +50,7 @@ exports['default'] = _react2['default'].createClass({
 	getInitialState: function getInitialState() {
 		return {
 			questions: _actionsQuestionnaireActionCreators2['default'].getQuestionsFromServer(),
-			//score: 0,
+			score: 0,
 			scores: {},
 			alertVisible: false,
 			resultVisible: false
@@ -82,16 +78,16 @@ exports['default'] = _react2['default'].createClass({
 		//var scores = AnswerStore.getAll();
 		var keys = Object.keys(this.state.scores.scores);
 		var allScores = this.state.scores.scores;
-		console.log('keys', allScores);
 		if (keys.length === 9) {
 			// calculates score.
 			var score = keys.reduce(function (sum, key) {
-				sum += allScores[key];
+				sum += +allScores[key];
 				return sum;
 			}, 0);
-			if (score > 10) {
-				this.setState({ resultVisible: true });
-			}
+			//if(score > 10){
+			this.setState({ resultVisible: true });
+			this.setState({ score: score });
+			//}
 			//ActionCreator.tally(score);
 		} else {
 			this.setState({ alertVisible: true });
@@ -103,6 +99,7 @@ exports['default'] = _react2['default'].createClass({
 		var questions = _state.questions;
 		var alertVisible = _state.alertVisible;
 		var resultVisible = _state.resultVisible;
+		var score = _state.score;
 
 		return _react2['default'].createElement(_AppJsx2['default'], {
 			onTally: this.handleTally,
@@ -110,7 +107,8 @@ exports['default'] = _react2['default'].createClass({
 			onAlert: alertVisible,
 			onResult: resultVisible,
 			onHandleAlertDismiss: this.handleAlertDismiss,
-			onHandleAlertShow: this.handleAlertShow
+			onHandleAlertShow: this.handleAlertShow,
+			score: score
 		});
 	}
 });
