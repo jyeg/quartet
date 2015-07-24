@@ -36,7 +36,6 @@ function addItem(title) {
 var QuestionStore = (0, _objectAssign2['default'])({}, _BaseStore2['default'], {
   // public methods used by Controller-View to operate on data
   getAll: function getAll() {
-    console.log('in question store', _questions);
     return {
       questions: _questions
     };
@@ -47,16 +46,16 @@ var QuestionStore = (0, _objectAssign2['default'])({}, _BaseStore2['default'], {
     var action = payload.action;
 
     switch (action.type) {
-      case _Constants2['default'].ActionTypes.TALLY:
-        var score = action.score;
-        // NOTE: if this action needs to wait on another store:
-        // Dispatcher.waitFor([OtherStore.dispatchToken]);
-        // For details, see: http://facebook.github.io/react/blog/2014/07/30/flux-actions-and-the-dispatcher.html#why-we-need-a-dispatcher
-        if (score) {
-          addItem(text);
-          QuestionStore.emitChange();
-        }
-        break;
+      //case Constants.ActionTypes.TALLY:
+      //  let score = action.score;
+      //  // NOTE: if this action needs to wait on another store:
+      //  // Dispatcher.waitFor([OtherStore.dispatchToken]);
+      //  // For details, see: http://facebook.github.io/react/blog/2014/07/30/flux-actions-and-the-dispatcher.html#why-we-need-a-dispatcher
+      //  if (score) {
+      //    addItem(text);
+      //	QuestionStore.emitChange();
+      //  }
+      //  break;
       case _Constants2['default'].ActionTypes.SET_QUESTIONS:
         var data = action.data;
         if (data) {

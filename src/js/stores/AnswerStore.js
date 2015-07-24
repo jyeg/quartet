@@ -4,11 +4,11 @@ import BaseStore from './BaseStore';
 import assign from 'object-assign';
 
 // data storage
-let _scores = [];
+let _scores = {};
 
 // add private functions to modify data
 function addScore(answer) {
-  _scores[answer.number] = answer.score;
+  _scores[answer[0]] = answer[1];
 }
 
 // Facebook style store creation.
@@ -16,7 +16,7 @@ const AnswerStore = assign({}, BaseStore, {
   // public methods used by Controller-View to operate on data
   getAll() {
     return {
-      tasks: _scores
+      scores: _scores
     };
   },
 
@@ -25,10 +25,10 @@ const AnswerStore = assign({}, BaseStore, {
     let action = payload.action;
 
     switch(action.type) {
-      case Constants.ActionTypes.ANSWER_ADDED:
+      case Constants.ActionTypes.ANSWERED:
         let text = action.answer;
 
-        if (!text) {
+        if (text) {
           addScore(text);
           AnswerStore.emitChange();
         }

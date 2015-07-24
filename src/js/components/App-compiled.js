@@ -22,6 +22,14 @@ var _QuestionnaireJsx = require('./Questionnaire.jsx');
 
 var _QuestionnaireJsx2 = _interopRequireDefault(_QuestionnaireJsx);
 
+var _AlertJsx = require('./Alert.jsx');
+
+var _AlertJsx2 = _interopRequireDefault(_AlertJsx);
+
+var _ResultsJsx = require('./Results.jsx');
+
+var _ResultsJsx2 = _interopRequireDefault(_ResultsJsx);
+
 exports['default'] = _react2['default'].createClass({
   displayName: 'App',
 
@@ -36,11 +44,25 @@ exports['default'] = _react2['default'].createClass({
     };
   },
 
+  handleAlertDismiss: function handleAlertDismiss() {
+    this.setState({ onAlert: false });
+  },
+
+  handleAlertShow: function handleAlertShow() {
+    this.setState({ onAlert: true });
+  },
+
   render: function render() {
     var _props = this.props;
     var onTally = _props.onTally;
     var questions = _props.questions;
+    var onAlert = _props.onAlert;
+    var onHandleAlertDismiss = _props.onHandleAlertDismiss;
+    var onResult = _props.onResult;
 
+    if (onResult) {
+      return _react2['default'].createElement(_ResultsJsx2['default'], null);
+    }
     return _react2['default'].createElement(
       'div',
       { className: 'container' },
@@ -51,14 +73,10 @@ exports['default'] = _react2['default'].createClass({
           'h1',
           null,
           'Patient Health Questionnaire (PHQ-9)'
-        ),
-        _react2['default'].createElement(
-          'p',
-          null,
-          'his easy to use patient questionnaire is a self-administered version of the PRIME-MD diagnostic instrument for common mental disorders> The PHQ-9 is the depression module, which scores each of the nine DSM-IV criteria as "0" (not at all) to "3" (nearly every day). It has been validated for use in primary care.'
         )
       ),
       _react2['default'].createElement(_QuestionnaireJsx2['default'], { questions: questions }),
+      onAlert ? _react2['default'].createElement(_AlertJsx2['default'], { onDismiss: onHandleAlertDismiss }) : null,
       _react2['default'].createElement(
         _reactBootstrapLibButton2['default'],
         { onClick: onTally, bsStyle: 'primary' },

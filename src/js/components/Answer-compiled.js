@@ -14,13 +14,17 @@ var _actionsQuestionnaireActionCreators = require('../actions/QuestionnaireActio
 
 var _actionsQuestionnaireActionCreators2 = _interopRequireDefault(_actionsQuestionnaireActionCreators);
 
-var _reactBootstrapLibListGroupItem = require('react-bootstrap/lib/ListGroupItem');
+var _reactBootstrapLibListGroupJs = require('react-bootstrap/lib/ListGroup.js');
 
-var _reactBootstrapLibListGroupItem2 = _interopRequireDefault(_reactBootstrapLibListGroupItem);
+var _reactBootstrapLibListGroupJs2 = _interopRequireDefault(_reactBootstrapLibListGroupJs);
 
-var _reactBootstrapLibInput = require('react-bootstrap/lib/Input');
+var _reactBootstrapLibListGroupItemJs = require('react-bootstrap/lib/ListGroupItem.js');
 
-var _reactBootstrapLibInput2 = _interopRequireDefault(_reactBootstrapLibInput);
+var _reactBootstrapLibListGroupItemJs2 = _interopRequireDefault(_reactBootstrapLibListGroupItemJs);
+
+var _reactBootstrapLibButtonJs = require('react-bootstrap/lib/Button.js');
+
+var _reactBootstrapLibButtonJs2 = _interopRequireDefault(_reactBootstrapLibButtonJs);
 
 exports['default'] = _react2['default'].createClass({
   displayName: 'Answer',
@@ -28,53 +32,47 @@ exports['default'] = _react2['default'].createClass({
   getDefaultProps: function getDefaultProps() {
     return {
       question: {
-        number: '',
-        text: false
+        id: ''
       }
     };
   },
 
-  handleToggle: function handleToggle(question) {},
+  handleToggle: function handleToggle(e) {
+    //if (this.refs.checkbox.getChecked()) {
+    //  ActionCreator.getQuestionsFromServer();
+    //}
+    _actionsQuestionnaireActionCreators2['default'].answer(this.props.id, e.target.id);
+  },
 
   render: function render() {
-    var number = this.props.number;
+    var id = this.props.id;
 
-    console.log(number);
     return _react2['default'].createElement(
-      ListGroup,
+      _reactBootstrapLibListGroupJs2['default'],
       null,
       _react2['default'].createElement(
-        _reactBootstrapLibListGroupItem2['default'],
-        { href: '#link1', onClick: this.handleToggle.bind(this, number) },
-        'test1'
+        _reactBootstrapLibListGroupItemJs2['default'],
+        { id: '1', bsStyle: 'success', onClick: this.handleToggle },
+        'Not at all'
       ),
       _react2['default'].createElement(
-        _reactBootstrapLibListGroupItem2['default'],
-        { bsStyle: 'success' },
-        'Success'
+        _reactBootstrapLibListGroupItemJs2['default'],
+        { id: '2', bsStyle: 'info', onClick: this.handleToggle },
+        'Several days'
       ),
       _react2['default'].createElement(
-        _reactBootstrapLibListGroupItem2['default'],
-        { bsStyle: 'info' },
-        'Info'
+        _reactBootstrapLibListGroupItemJs2['default'],
+        { id: '3', bsStyle: 'warning', onClick: this.handleToggle },
+        'More than half the days'
       ),
       _react2['default'].createElement(
-        _reactBootstrapLibListGroupItem2['default'],
-        { bsStyle: 'warning' },
-        'Warning'
-      ),
-      _react2['default'].createElement(
-        _reactBootstrapLibListGroupItem2['default'],
-        { bsStyle: 'danger' },
-        'Danger'
+        _reactBootstrapLibListGroupItemJs2['default'],
+        { id: '4', bsStyle: 'danger', onClick: this.handleToggle },
+        'Nearly every day'
       )
     );
   }
 });
 module.exports = exports['default'];
-
-//if (this.refs.checkbox.getChecked()) {
-//  ActionCreator.getQuestionsFromServer();
-//}
 
 //# sourceMappingURL=Answer-compiled.js.map

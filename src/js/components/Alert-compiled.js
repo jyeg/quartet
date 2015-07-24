@@ -14,20 +14,12 @@ var _actionsQuestionnaireActionCreators = require('../actions/QuestionnaireActio
 
 var _actionsQuestionnaireActionCreators2 = _interopRequireDefault(_actionsQuestionnaireActionCreators);
 
-var _reactBootstrapLibListGroupItem = require('react-bootstrap/lib/ListGroupItem');
+var _reactBootstrapLibAlert = require('react-bootstrap/lib/Alert');
 
-var _reactBootstrapLibListGroupItem2 = _interopRequireDefault(_reactBootstrapLibListGroupItem);
-
-var _reactBootstrapLibInput = require('react-bootstrap/lib/Input');
-
-var _reactBootstrapLibInput2 = _interopRequireDefault(_reactBootstrapLibInput);
-
-var _AnswerJsx = require('./Answer.jsx');
-
-var _AnswerJsx2 = _interopRequireDefault(_AnswerJsx);
+var _reactBootstrapLibAlert2 = _interopRequireDefault(_reactBootstrapLibAlert);
 
 exports['default'] = _react2['default'].createClass({
-  displayName: 'Question',
+  displayName: 'Alert',
 
   getDefaultProps: function getDefaultProps() {
     return {
@@ -39,20 +31,19 @@ exports['default'] = _react2['default'].createClass({
   },
 
   render: function render() {
-    var question = this.props.question;
+    var onDismiss = this.props.onDismiss;
 
     return _react2['default'].createElement(
-      _reactBootstrapLibListGroupItem2['default'],
-      null,
+      _reactBootstrapLibAlert2['default'],
+      { bsStyle: 'warning', onDismiss: onDismiss },
       _react2['default'].createElement(
-        'p',
+        'strong',
         null,
-        question.question
-      ),
-      _react2['default'].createElement(_AnswerJsx2['default'], { id: question.id })
+        'Please answer all questions. '
+      )
     );
   }
 });
 module.exports = exports['default'];
 
-//# sourceMappingURL=Question-compiled.js.map
+//# sourceMappingURL=Alert-compiled.js.map

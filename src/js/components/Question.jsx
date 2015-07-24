@@ -8,25 +8,18 @@ export default React.createClass({
   getDefaultProps() {
     return {
       question: {
-        number: 0,
-        text: ''
+        id: 0,
+	      question: ''
       }
     };
-  },
-
-  handleToggle(question) {
-    //if (this.refs.checkbox.getChecked()) {
-    //  ActionCreator.getQuestionsFromServer();
-    //}
   },
 
   render() {
     let {question} = this.props;
     return (
       <ListGroupItem>
-
-	      <label>{question.text}</label>
-				<Answer number={question.number}/>
+	      <p>{question.question}</p>
+				<Answer id={question.id}/>
       </ListGroupItem>
     );
   }

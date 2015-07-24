@@ -1,25 +1,19 @@
 import React from 'react';
 import Question from './Question.jsx';
 import ListGroup from 'react-bootstrap/lib/ListGroup';
-import Alert from 'react-bootstrap/lib/Alert';
+
 
 export default React.createClass({
   getDefaultProps() {
     return {
-      questions: []
+      questions: [],
+	    total:0
     };
   },
 
   render() {
     let {questions} = this.props;
-		console.log('in questionaire', questions);
-    if (questions.length === 0) {
-      return (
-        <Alert bsStyle="warning">
-          <strong>You have no tasks</strong> Create some using the Add New button below.
-        </Alert>
-      );
-    }
+
 
     return (
       <form>
@@ -28,6 +22,9 @@ export default React.createClass({
             <Question question={question} key={question.id}/>
           )}
         </ListGroup>
+	      <div>
+		      <p>Depression Severity: 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.</p>
+	      </div>
       </form>
     );
   }

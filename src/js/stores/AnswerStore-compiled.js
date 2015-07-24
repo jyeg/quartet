@@ -23,11 +23,11 @@ var _objectAssign = require('object-assign');
 var _objectAssign2 = _interopRequireDefault(_objectAssign);
 
 // data storage
-var _scores = [];
+var _scores = {};
 
 // add private functions to modify data
 function addScore(answer) {
-  _scores[answer.number] = answer.score;
+  _scores[answer[0]] = answer[1];
 }
 
 // Facebook style store creation.
@@ -35,7 +35,7 @@ var AnswerStore = (0, _objectAssign2['default'])({}, _BaseStore2['default'], {
   // public methods used by Controller-View to operate on data
   getAll: function getAll() {
     return {
-      tasks: _scores
+      scores: _scores
     };
   },
 
@@ -44,10 +44,10 @@ var AnswerStore = (0, _objectAssign2['default'])({}, _BaseStore2['default'], {
     var action = payload.action;
 
     switch (action.type) {
-      case _Constants2['default'].ActionTypes.ANSWER_ADDED:
+      case _Constants2['default'].ActionTypes.ANSWERED:
         var text = action.answer;
 
-        if (!text) {
+        if (text) {
           addScore(text);
           AnswerStore.emitChange();
         }

@@ -18,35 +18,18 @@ var _reactBootstrapLibListGroup = require('react-bootstrap/lib/ListGroup');
 
 var _reactBootstrapLibListGroup2 = _interopRequireDefault(_reactBootstrapLibListGroup);
 
-var _reactBootstrapLibAlert = require('react-bootstrap/lib/Alert');
-
-var _reactBootstrapLibAlert2 = _interopRequireDefault(_reactBootstrapLibAlert);
-
 exports['default'] = _react2['default'].createClass({
   displayName: 'Questionnaire',
 
   getDefaultProps: function getDefaultProps() {
     return {
-      questions: []
+      questions: [],
+      total: 0
     };
   },
 
   render: function render() {
     var questions = this.props.questions;
-
-    console.log('in questionaire', questions);
-    if (questions.length === 0) {
-      return _react2['default'].createElement(
-        _reactBootstrapLibAlert2['default'],
-        { bsStyle: 'warning' },
-        _react2['default'].createElement(
-          'strong',
-          null,
-          'You have no tasks'
-        ),
-        ' Create some using the Add New button below.'
-      );
-    }
 
     return _react2['default'].createElement(
       'form',
@@ -57,6 +40,15 @@ exports['default'] = _react2['default'].createClass({
         questions.map(function (question) {
           return _react2['default'].createElement(_QuestionJsx2['default'], { question: question, key: question.id });
         })
+      ),
+      _react2['default'].createElement(
+        'div',
+        null,
+        _react2['default'].createElement(
+          'p',
+          null,
+          'Depression Severity: 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.'
+        )
       )
     );
   }
