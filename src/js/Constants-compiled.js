@@ -16,7 +16,6 @@ exports['default'] = {
 
   // Each time you add an action, add it here... They should be past-tense
   ActionTypes: (0, _reactLibKeyMirror2['default'])({
-    TASK_ADDED: null,
     ANSWERED: null,
     TALLY: null,
     SET_QUESTIONS: null
