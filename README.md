@@ -1,7 +1,10 @@
 ## How to run.
-npm install
-json-server db.json
-npm start
+  
+  npm install
+  
+  json-server db.json
+  
+  npm start
 
 # quartet
 Coding challenge for quartet health!
