@@ -36,7 +36,9 @@ exports['default'] = _react2['default'].createClass({
       }
     };
   },
-
+  /*
+   * Attempted to handle the select item login here.
+   */
   handleToggle: function handleToggle(e) {
     //if (this.refs.checkbox.getChecked()) {
     //  ActionCreator.getQuestionsFromServer();

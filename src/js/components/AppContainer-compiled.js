@@ -29,6 +29,9 @@ var _AppJsx2 = _interopRequireDefault(_AppJsx);
 exports['default'] = _react2['default'].createClass({
 	displayName: 'AppContainer',
 
+	/*
+  * attempted validation, fail
+  */
 	//propTypes: {
 	//	// You can also specify a custom validator. It should return an Error
 	//	// object if the validation fails. Don't `console.warn` or throw, as this
@@ -67,17 +70,17 @@ exports['default'] = _react2['default'].createClass({
 		_storesAnswerStoreJs2['default'].removeChangeListener(this._onChange);
 	},
 
-	//handleAddTask(e) {
-	//  let title = prompt('Enter task title:');
-	//  if (title) {
-	//    ActionCreator.addItem(title);
-	//  }
-	//},
-
+	/*
+  * method that will handle submit button and determine which view to display,
+  * probably would be refactored to hold business logic away from client, but outside of
+  * scope of current assignment
+  */
 	handleTally: function handleTally() {
-		//var scores = AnswerStore.getAll();
+		//var scores = AnswerStore.getAll()
+
 		var keys = Object.keys(this.state.scores.scores);
 		var allScores = this.state.scores.scores;
+		// make sure all questions are answered.
 		if (keys.length === 9) {
 			// calculates score.
 			var score = keys.reduce(function (sum, key) {

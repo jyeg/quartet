@@ -22,7 +22,7 @@ export default React.createClass({
             <Question question={question} key={question.id}/>
           )}
         </ListGroup>
-	      <div>
+	      <div className="container">
 		      <p>Depression Severity: 0-4 none, 5-9 mild, 10-14 moderate, 15-19 moderately severe, 20-27 severe.</p>
 	      </div>
       </form>

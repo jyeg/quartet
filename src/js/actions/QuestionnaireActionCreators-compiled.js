@@ -22,6 +22,9 @@ exports['default'] = {
 		});
 	},
 
+	/*
+  * using json-server to simulate a api which would be used to pull n number of questionnaires from DB.
+  */
 	getQuestionsFromServer: function getQuestionsFromServer() {
 		var _this = this;
 
@@ -37,13 +40,19 @@ exports['default'] = {
 		});
 	},
 
+	/*
+  *  action to hold new answer in the store.
+  */
 	answer: function answer(number, choice) {
 		_Dispatcher2['default'].handleViewAction({
 			type: _Constants2['default'].ActionTypes.ANSWERED,
 			answer: [number, choice]
 		});
-	},
+	}
 
+	/*
+  * Would be used to handle business logic, instead just wrote on client side.
+  */
 	//tally(score) {
 	//	if(score >= 10){
 	//
@@ -54,13 +63,6 @@ exports['default'] = {
 	//	});
 	//},
 
-	clearList: function clearList() {
-		console.warn('clearList action not yet implemented...');
-	},
-
-	completeTask: function completeTask(task) {
-		console.warn('completeTask action not yet implemented...');
-	}
 };
 module.exports = exports['default'];
 

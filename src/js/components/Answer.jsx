@@ -12,7 +12,9 @@ export default React.createClass({
       }
     };
   },
-
+	/*
+	 * Attempted to handle the select item login here.
+	 */
   handleToggle(e) {
     //if (this.refs.checkbox.getChecked()) {
     //  ActionCreator.getQuestionsFromServer();

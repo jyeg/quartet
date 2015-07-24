@@ -43,7 +43,7 @@ exports['default'] = _react2['default'].createClass({
       ),
       _react2['default'].createElement(
         'div',
-        null,
+        { className: 'container' },
         _react2['default'].createElement(
           'p',
           null,

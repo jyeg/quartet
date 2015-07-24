@@ -15,6 +15,11 @@ export default React.createClass({
 			thanksVisible: false
 		};
 	},
+
+	/*
+	 * method that change state when Book appointment button is clicked.
+	 */
+
 	toggleThanks(){
 		this.setState({thanksVisible: true});
 	},
